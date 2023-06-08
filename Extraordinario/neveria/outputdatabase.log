@@ -1,0 +1,170 @@
+[EL Severe]: metadata: 2023-06-07 21:45:39.218--ServerSession(336500899)--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.244--ServerSession(336500899)--The java.lang.Object class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.278--ServerSession(336500899)--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.279--ServerSession(336500899)--The java.lang.String class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.325--ServerSession(336500899)--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.326--ServerSession(336500899)--The java.lang.Long class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.328--ServerSession(336500899)--The java.lang.Boolean class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.328--ServerSession(336500899)--The java.lang.Boolean class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.33--ServerSession(336500899)--The java.lang.Double class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.331--ServerSession(336500899)--The java.lang.Double class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.345--ServerSession(336500899)--The java.io.Serializable class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.346--ServerSession(336500899)--The java.io.Serializable class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Severe]: metadata: 2023-06-07 21:45:39.391--ServerSession(336500899)--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.IllegalArgumentException: Unsupported class file major version 63
+[EL Severe]: metadata: 2023-06-07 21:45:39.392--ServerSession(336500899)--The java.lang.Number class was compiled with an unsupported JDK. Report this error to the EclipseLink open source project.
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 0
+[EL Info]: 2023-06-07 21:45:39.75--ServerSession(336500899)--EclipseLink, version: Eclipse Persistence Services - 2.7.7.v20200504-69f2c2b80d
+[EL Fine]: sql: 2023-06-07 21:45:41.373--ServerSession(336500899)--Connection(1719442384)--SELECT * FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
+[EL Fine]: sql: 2023-06-07 21:45:41.712--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:45:41.738--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_PALETA, SABOR_PALETA, TAMAÑO_PALETA, TIPO_PALETA FROM PRODUCTOPALETA
+[EL Fine]: sql: 2023-06-07 21:45:41.881--ClientSession(1840596441)--Connection(1719442384)--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind => [50, SEQ_GEN]
+[EL Fine]: sql: 2023-06-07 21:45:41.896--ClientSession(1840596441)--Connection(1719442384)--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind => [SEQ_GEN]
+[EL Fine]: sql: 2023-06-07 21:45:41.921--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [651, Se mostro el catalogo, null, Paleta, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:45:51.81--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:45:51.827--ClientSession(960346401)--Connection(1719442384)--DELETE FROM PRODUCTOPALETA WHERE (ID = ?)
+	bind => [57]
+[EL Fine]: sql: 2023-06-07 21:45:51.833--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [652, Se elimino un dato del catalogo, null, Paletas, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:45:57.719--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:45:57.724--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:45:57.74--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [653, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:45:58.919--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:45:58.923--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_PALETA, SABOR_PALETA, TAMAÑO_PALETA, TIPO_PALETA FROM PRODUCTOPALETA
+[EL Fine]: sql: 2023-06-07 21:45:58.93--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [654, Se mostro el catalogo, null, Paleta, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:01.896--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:01.901--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:46:01.908--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [655, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:10.929--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:10.937--ClientSession(960346401)--Connection(1719442384)--DELETE FROM PRODUCTONIEVE WHERE (ID = ?)
+	bind => [51]
+[EL Fine]: sql: 2023-06-07 21:46:10.996--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [656, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:11.0--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:11.002--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE WHERE (ID = ?)
+	bind => [51]
+[EL Fine]: sql: 2023-06-07 21:46:11.04--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [657, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:16.401--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:16.417--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [658, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:16.474--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:16.48--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [659, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:25.811--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:25.82--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_PALETA, SABOR_PALETA, TAMAÑO_PALETA, TIPO_PALETA FROM PRODUCTOPALETA
+[EL Fine]: sql: 2023-06-07 21:46:25.828--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [660, Se mostro el catalogo, null, Paleta, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:26.815--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:26.822--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:46:26.835--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [661, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:37.923--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:37.928--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:46:37.934--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [662, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:43.171--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:43.176--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:46:43.189--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [663, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.027--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.034--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [664, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.086--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.092--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [665, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.097--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.103--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [666, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.109--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.115--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [667, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.12--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.126--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [668, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.131--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.137--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [669, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:46:54.143--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:46:54.148--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [670, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.14--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.145--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [671, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.2--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.206--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [672, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.21--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.215--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [673, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.22--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.225--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [674, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.229--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.235--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [675, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.239--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.244--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [676, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:05.249--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:05.252--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [677, Se elimino un dato del catalogo, null, Nieves, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:16.704--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:16.708--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:47:16.712--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [678, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:26.753--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:26.758--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:47:26.764--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [679, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:33.02--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:33.027--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:47:33.031--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [680, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:33.038--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:33.045--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_PALETA, SABOR_PALETA, TAMAÑO_PALETA, TIPO_PALETA FROM PRODUCTOPALETA
+[EL Fine]: sql: 2023-06-07 21:47:33.05--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [681, Se mostro el catalogo, null, Paleta, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:33.216--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:33.22--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, CONTADOR_ID, ID_VENTA, PRECIO_PROD, SABOR_PROD, TAMAÑO_PROD, TIPO_PROD, TIPODEL_PROD FROM VENTA
+[EL Fine]: sql: 2023-06-07 21:47:33.241--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [682, Se mostro el catalogo, null, Ventas, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:41.828--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:41.833--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [683, Se elimino un dato del catalogo, null, Ventas, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:49.348--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:49.356--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_NIEVE, SABOR_NIEVE, TAMAÑO_NIEVE, TIPO_NIEVE FROM PRODUCTONIEVE
+[EL Fine]: sql: 2023-06-07 21:47:49.361--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [684, Se mostro el catalogo, null, Nieve, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:49.416--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:49.419--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PRECIO_PALETA, SABOR_PALETA, TAMAÑO_PALETA, TIPO_PALETA FROM PRODUCTOPALETA
+[EL Fine]: sql: 2023-06-07 21:47:49.423--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [685, Se mostro el catalogo, null, Paleta, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:49.429--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:49.432--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, CONTADOR_ID, ID_VENTA, PRECIO_PROD, SABOR_PROD, TAMAÑO_PROD, TIPO_PROD, TIPODEL_PROD FROM VENTA
+[EL Fine]: sql: 2023-06-07 21:47:49.436--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [686, Se mostro el catalogo, null, Ventas, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:56.452--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:56.457--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [687, Se elimino un dato del catalogo, null, Ventas, 2023-06-07, 21:45:41.787833200]
+[EL Fine]: sql: 2023-06-07 21:47:56.512--ServerSession(336500899)--Connection(1719442384)--SELECT ID, ACTIVO, PASS_USER, USER_NORM FROM USUARIO
+[EL Fine]: sql: 2023-06-07 21:47:56.517--ClientSession(1840596441)--Connection(1719442384)--INSERT INTO BITACORA (ID, ACCION, ACTIVO, CATALOGO, FECHA, HORA) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [688, Se elimino un dato del catalogo, null, Ventas, 2023-06-07, 21:45:41.787833200]
